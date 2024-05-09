@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="recursos/css/main.css">
+    <link rel="stylesheet" href="recursos/css/landing.css">
+    <link rel="icon" href="recursos/img/Diseño-sin-título.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <title>Landing Page</title>
+</head>
+<body>
+    <div id="blur-screen"></div>
+    <header>
+        <section id="logo"><img src="https://fontmeme.com/permalink/240414/399c0524b4091c49b3177bef356c4510.png" alt="netflix-font"></section>
+        <section id="links">
+            <select name="idiom" id="idiom">
+                <option value="espaniol" selected>Español</option>
+                <option value="english">English</option>
+            </select>
+            <a href="javascript:void" onclick="login()" id="closeButton" >Iniciar Sesión</a>
+    </section>
+    </header>
+    <main>
+
+        <div id="popup-window">
+            <form action="" id="login-form" class="form">
+                <div id="popup-brand">
+                    <img src="https://fontmeme.com/permalink/240414/399c0524b4091c49b3177bef356c4510.png" alt="netflix-font">
+                </div>
+                <div id="popup-inputs">
+                        <input type="email" name="email" id="input-Email" placeholder="Correo">
+                        <section>
+                            <input type="password" name="user-pass" id="input-Userpass" placeholder="Contraseña">
+                            <p id="olvide">Olvidaste la contraseña</p>
+                        </section>
+                        <div id="popup-buttons">
+                            <button type="button" id="popup-cancelButton">Cancelar</button>
+                            <button type="submit" id="popup-submitButton">Enviar</button>
+                        </div>
+                </div>
+            </form>
+        </div>
+
+        <div id="popup-registerwindow">
+            <form action="" id="register-form" class="form">
+                <div id="popup-brand">
+                    <img src="https://fontmeme.com/permalink/240414/399c0524b4091c49b3177bef356c4510.png" alt="netflix-font">
+                </div>
+                    <div id="popup-inputs">
+                        <input type="text" name="name" id="input-Createname" placeholder="Usuario">
+                        <input type="password" name="pass" id="input-Createpass" placeholder="Contraseña">
+                    <div id="popup-buttons">
+                        <button type="button" id="popup-cancelButton-register">Cancelar</button>
+                        <button type="submit" id="popup-submitButton-register">Crear cuenta</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <section id="textoPrincipal">
+            <p>MIRA SERIES, PELICULAS, DOCUMENTALES Y MUCHO MÁS... <br> DONDE SEA Y CUANDO QUIERAS</p>
+        </section>
+        <section id="slogan">
+            <p>REGISTRATE PARA INICIAR Y DISFRUTAR DE NUESTRA EXPERIENCIA</p>
+        </section>
+        <section id="correo">
+            <section id="input">
+                <input type="email" name="email" id="email" placeholder="Correo electrónico"><button type="submit" onclick="register()">Empezar > </button>
+            </section>
+        </section>
+    </main>
+    <script src="js/popup.js"></script>
+    <script src="js/idiom.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/register.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="js/toastify.js"></script>
+</body>
+</html>

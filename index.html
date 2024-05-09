@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="recursos/img/Diseño-sin-título.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="recursos/css/main.css">
+    <link rel="stylesheet" href="recursos/css/index.css">
+    <title>ReelRover</title>
+</head>
+<body>
+    <header>
+        <section id="logo"><img src="https://fontmeme.com/permalink/240414/399c0524b4091c49b3177bef356c4510.png" alt="netflix-font" id="logoButton"></section>
+        <section id="links">
+            <select name="idiom" id="idiom" disabled>
+                <option value="espaniol" selected>Español</option>
+                <option value="english">English</option>
+            </select>
+            <a href="javascript:void" onclick="closeSession()" id="closeButton">Cerrar sesión</a>
+    </section>
+    </header>
+    <main>
+        <section id="search-bar">
+            <input type="search" name="search" id="search-input">
+            <button type="submit" id="search-button"><img src="" alt="lupa"></button>
+            <div id="resultados"></div>
+        </section>
+        <div id="contenido-principal">
+            <section>
+                <div class="seccion">
+                    <p>Recomendados</p>
+                </div>
+                <div class="swiper Slider1">
+                    <div class="swiper-wrapper" id="recomendado1">
+                        <div class="swiper-slide">
+                            <img src="recursos/img/miniaturas/recomendado1.jpg" id="recomendado1" alt="">
+                            <video src="recursos/videos/video.mp4" autoplay muted loop></video>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="recursos/img/miniaturas/recomendado2.jpg" alt="">
+                            <video src="recursos/videos/avatar.mp4" autoplay muted loop></video>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="recursos/img/miniaturas/recomendado3.jpg" alt="">
+                            <video src="recursos/videos/deadpool.mp4" autoplay muted loop></video>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="recursos/img/miniaturas/recomendado4.jpg" alt="">
+                            <video src="recursos/videos/jurasticpark3.mp4" autoplay muted loop></video>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="recursos/img/miniaturas/recomendado5.jpg" alt="">
+                            <video src="recursos/videos/ironman2.mp4" autoplay muted loop></video>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="recursos/img/miniaturas/recomendado6.jpg" alt="">
+                            <video src="recursos/videos/ironman3.mp4" autoplay muted loop></video>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="recursos/img/miniaturas/recomendado7.jpg" alt="">
+                            <video src="recursos/videos/jurasticworld.mp4" autoplay muted loop></video>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="recursos/img/miniaturas/recomendado8.jpg" alt="">
+                            <video src="recursos/videos/sonic.mp4" autoplay muted loop></video>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </section>
+
+            <section class="slider">
+                <div class="seccion">
+                    <p>Categorías</p>
+                </div>
+                <div class="Slider2" id="categorias">
+                    <div class="categorias-wrapper">
+                        <div class="categorias-slide">
+                            <h1>Peliculas de acción</h1>
+                        </div>
+                        <div class="categorias-slide">
+                            <h1>Peliculas de comedia</h1>
+                        </div>
+                        <div class="categorias-slide">
+                            <h1>Peliculas de romance</h1>
+                        </div>
+                        <div class="categorias-slide">
+                            <h1>Peliculas de aventura</h1>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="slider">
+                <div class="seccion">
+                    <p>Vistos recientemente</p>
+                </div>
+                <div class="Slider2" id="vistos">
+                    <div class="vistos-wrapper">
+                        <div class="vistos-slide">
+                            <h1>Ver Listado</h1>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>®ReelRover 2024</p>
+    </footer>
+    <!-- Importciones por CDN -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Importaciones locales -->
+    <script src="js/idiom.js"></script>
+    <script src="js/toastify.js"></script>    
+    <script src="js/session.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/livePreview.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/chargeVideos.js"></script>
+    <script src="js/categorias.js"></script>
+    <script src="js/vistos.js"></script>
+</body>
+</html>

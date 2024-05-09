@@ -1,0 +1,43 @@
+    <meta charset="UTF-8">
+    <style>
+        #datos-container {
+            width: 100%;
+            height: 90vh;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 20px;
+        }
+        .video {
+            width: calc(90% / 4);
+            height: 250px;
+            border: 1px solid var(--stroke);
+        }
+        .video img {
+            width: 100%;
+            object-fit: cover;
+            object-position: center bottom;
+            height: 150px;
+            margin-right: 10px;
+        }
+    </style>
+    <div id="datos-container"></div>
+
+    <script>
+        var videosVistos = JSON.parse(sessionStorage.getItem('videosVistos'));
+
+        if (videosVistos && videosVistos.length > 0) {
+            var datosHTML = '';
+            videosVistos.forEach(function(video) {
+                datosHTML += '<div class="video">';
+                datosHTML += '<img src="' + video.imagen + '" alt="Imagen">';
+                datosHTML += '<h2>' + video.nombre + '</h2>';
+                datosHTML += '<p><strong>Director:</strong> ' + video.director + '</p>';
+                datosHTML += '</div>';
+            });
+
+            document.getElementById('datos-container').innerHTML = datosHTML;
+        } else {
+            document.getElementById('datos-container').innerHTML = '<p>No has visto ninguna pelicula recientemente, anda! que esperas</p>';
+        }
+    </script>

@@ -1,0 +1,66 @@
+[
+{
+    "nombre": "Iron Man",
+    "duración": "2h 6m",
+    "director": "Jon Favreau",
+    "categoría": "acción",
+    "recurso": "recursos/videos/video.mp4",
+    "imagen": "recursos/img/miniaturas/recomendado1.jpg"
+},
+{
+    "nombre": "Iron Man II",
+    "duración": "2h 5m",
+    "director": "Jon Favreau",
+    "categoría": "acción",
+    "recurso": "recursos/videos/ironman2.mp4",
+    "imagen": "recursos/img/miniaturas/recomendado5.jpg"
+},
+{
+    "nombre": "Iron Man III",
+    "duración": "2h 10m",
+    "director": "Shane Black",
+    "categoría": "comedia",
+    "recurso": "recursos/videos/ironman3.mp4",
+    "imagen": "recursos/img/miniaturas/recomendado6.jpg"
+},
+{
+    "nombre": "Avatar",
+    "duración": "2h 42m",
+    "director": "James Cameron",
+    "categoría": "aventura",
+    "recurso": "recursos/videos/avatar.mp4",
+    "imagen": "recursos/img/miniaturas/recomendado2.jpg"
+},
+{
+    "nombre": "Deadpool",
+    "duración": "1h 48m",
+    "director": "Tim Miller",
+    "categoría": "comedia",
+    "recurso": "recursos/videos/deadpool.mp4",
+    "imagen": "recursos/img/miniaturas/recomendado3.jpg"
+},
+{
+    "nombre": "Sonic la pelicula",
+    "duración": "1h 39m",
+    "director": "Jeff Fowler",
+    "categoría": "aventura",
+    "recurso": "recursos/videos/sonic.mp4",
+    "imagen": "recursos/img/miniaturas/recomendado8.jpg"
+},
+{
+    "nombre": "Jurassic Park III",
+    "duración": "1h 32m",
+    "director": "Joe Johnston",
+    "categoría": "romance",
+    "recurso": "recursos/videos/jurasticpark3.mp4",
+    "imagen": "recursos/img/miniaturas/recomendado4.jpg"
+},
+{
+    "nombre": "Jurassic World",
+    "duración": "2h 4m",
+    "director": "Colin Trevorrow",
+    "categoría": "romance",
+    "recurso": "recursos/videos/jurasticworld.mp4",
+    "imagen": "recursos/img/miniaturas/recomendado7.jpg"
+}
+]
